@@ -1,4 +1,7 @@
 #!/usr/local/bin/python3.8
+'''
+Armstrong number is a number that is equal to the sum of n-th(n - number of digits) powers of their digits are called Armstrong numbers.
+'''
 startn=int(input("Please enter the starting Range: "))
 endn=int(input("Please enter the ending Range: "))
 for num in range(startn,endn+1):

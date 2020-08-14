@@ -1,4 +1,7 @@
 #!/usr/local/bin/python3.8
+'''
+A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number that remains the same when its digits are reversed. ..
+'''
 num=int(input("Please enter the Number: "))
 New=num
 z=0
