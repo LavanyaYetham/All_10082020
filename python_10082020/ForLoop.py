@@ -11,3 +11,32 @@ for j in range(1,5):
 print ("##########")
 for k in range(1,5,2):
     print (k)
+print ("##########")
+for k in range(10,1,-2):
+    print (k)
+print ("*************")
+#for loop-Accessing Elements
+OS=["Windows","Mac OS","Unix","Linux"]
+for x in OS:
+    print (x)
+
+print ("*************")
+#for loop-seq.of char in string
+for i in "Python":
+    print (i)
+print ("*************")
+#for loop-printsquare of numbers
+for x in  range(1,11):
+    print ("Square of",x,"is",x*x)
+print ("*************")
+#for loop-print even numbers
+print ("Even Numbers between 1 to 25: ")
+for x in range(1,26):
+    if (x%2 == 0):
+        print (x)
+
+print ("*************")
+#for loop-print multiplicate table
+n=int(input("Enter the numbers: "))
+for i in range(1,11):
+    print (n,"*,",i,"=",n*i)

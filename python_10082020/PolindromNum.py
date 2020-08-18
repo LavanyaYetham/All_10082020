@@ -14,4 +14,11 @@ if int(z) == int(New):
    print ("The Given Number",New,"is Polindrome")
 else:
    print ("The Given Number",New,"is not  Polindrome")
-
+print ("***********************")
+my_str='RADAR'
+my_str=my_str.casefold()
+rev_str=reversed(my_str)
+if list(my_str) == list(rev_str):
+    print ("The string ia a Polindrome.")
+else:
+    print ("The stringis not a Polindrome")

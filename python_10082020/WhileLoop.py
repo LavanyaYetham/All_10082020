@@ -18,3 +18,10 @@ while i<=3:
         j=j+1
     i=i+1
     print ()
+print ("********************")
+n=0
+while n!=1:
+    print ("You are inside the while loop: ")
+    print ("Press 1 to exit from the loop: ")
+    n=int(input())
+print ("You are out of the while loop")
