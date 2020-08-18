@@ -1,0 +1,38 @@
+"""
+############SQL DROP TABLE#######################
+->SQL DROP TABLE statement is used to delete all data from a table.[boths rows and columns will be delete]
+
+Syntax:--DROP TABLE "table_name"; 
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| TESTDATABASE       |
+| mysql              |
+| performance_schema |
+| students           |
+| sys                |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> use students;
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_students |
++--------------------+
+| studenttable       |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> drop table studenttable;
+Query OK, 0 rows affected (0.15 sec)
+
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> desc studenttable;
+ERROR 1146 (42S02): Table 'students.studenttable' doesn't exist
+"""

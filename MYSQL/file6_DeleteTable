@@ -1,0 +1,127 @@
+"""
+  ##########################SQL DELETE TABLE#################
+
+->The DELETE statement is used to delete rows from a table.[only rows will be delete]
+
+Syntax:-DELETE FROM table_name [WHERE condition];    [delete specific rows  based on condition]
+      :-DELETE FROM table_name;                       [delete all rows from table]
+
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| TESTDATABASE       |
+| mysql              |
+| performance_schema |
+| students           |
+| sys                |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> use students;
+Database changed
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> create table studenttable(SNO int,NAME varchar(15),LOCATION varchar(15));
+
+
+
+mysql> insert into studenttable(SNO,NAME,LOCATION) VALUES ('1','SAI','BANG');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into studenttable(SNO,NAME,LOCATION) VALUES ('1','SAI','BANG');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into studenttable(SNO,NAME,LOCATION) VALUES ('2','ABCD','HYD');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> desc studenttable;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| SNO      | int(11)     | YES  |     | NULL    |       |
+| NAME     | varchar(15) | YES  |     | NULL    |       |
+| LOCATION | varchar(15) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+
+mysql> select * from studenttable;
++------+------+----------+
+| SNO  | NAME | LOCATION |
++------+------+----------+
+|    1 | SAI  | BANG     |
+|    1 | SAI  | BANG     |
+|    2 | ABCD | HYD      |
++------+------+----------+
+3 rows in set (0.01 sec)
+
+mysql> delete from studenttable where SNO=2;
+Query OK, 1 row affected (0.14 sec)
+
+mysql> select * from studenttable;
++------+------+----------+
+| SNO  | NAME | LOCATION |
++------+------+----------+
+|    1 | SAI  | BANG     |
+|    1 | SAI  | BANG     |
++------+------+----------+
+2 rows in set (0.00 sec)
+
+
+mysql> delete from studenttable;
+Query OK, 2 rows affected (0.01 sec)
+
+mysql> show tables;
++--------------------+
+| Tables_in_students |
++--------------------+
+| studenttable       |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> desc studenttable;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| SNO      | int(11)     | YES  |     | NULL    |       |
+| NAME     | varchar(15) | YES  |     | NULL    |       |
+| LOCATION | varchar(15) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from  studenttable;
+Empty set (0.00 sec)
+
+
+mysql> truncate studenttable;
+Query OK, 0 rows affected (0.13 sec)
+
+
+mysql> truncate studenttable;
+Query OK, 0 rows affected (0.13 sec)
+
+mysql> show tables;
++--------------------+
+| Tables_in_students |
++--------------------+
+| studenttable       |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> desc studenttable;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| SNO      | int(11)     | YES  |     | NULL    |       |
+| NAME     | varchar(15) | YES  |     | NULL    |       |
+| LOCATION | varchar(15) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from studenttable;
+Empty set (0.00 sec)
+"""

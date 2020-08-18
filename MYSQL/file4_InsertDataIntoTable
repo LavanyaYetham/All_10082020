@@ -1,0 +1,46 @@
+"""
+ ##########################SQL INSERT DATA INTO TABLE#############################
+
+mysql> select database();
++------------+
+| database() |
++------------+
+| students   |
++------------+
+1 row in set (0.00 sec)
+
+mysql> show tables;
++--------------------+
+| Tables_in_students |
++--------------------+
+| studenttable       |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> show columns from studenttable;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| SNO      | int(11)     | YES  |     | NULL    |       |
+| NAME     | varchar(15) | YES  |     | NULL    |       |
+| LOCATION | varchar(15) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into studenttable(SNO,NAME,LOCATION) VALUES ('1','SAI','BANG');
+Query OK, 1 row affected (0.15 sec)
+
+mysql> insert into studenttable(SNO,NAME,LOCATION) VALUES ('1','SAI','BANG');
+Query OK, 1 row affected (0.06 sec)
+
+
+mysql> select * from studenttable;
++------+------+----------+
+| SNO  | NAME | LOCATION |
++------+------+----------+
+|    1 | SAI  | BANG     |
+|    1 | SAI  | BANG     |
++------+------+----------+
+2 rows in set (0.00 sec)
+
+"""
