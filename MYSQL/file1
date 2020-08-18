@@ -1,0 +1,37 @@
+"""
+# mysql -u root -p
+Enter password:
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| TESTDATABASE       |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+SQL statement :-SQL statements are started with any of the SQL commands/keywords like SELECT, INSERT, UPDATE, DELETE, ALTER, DROP etc. and the statement ends with a semicolon (;).
+
+                               ####################SQL datatypes################
+->Data types are used to represent the nature of the data that can be stored in the database table.
+  (1)String Data types
+  (2)Numeric Data types
+  (3)Date and time Data types
+
+                             #####################SQL Operators#####################
+
+Generally there are three types of operators in SQL:
+
+   (1)SQL Arithmetic Operators
+   (2)SQL Comparison Operators
+   (3)SQL Logical Operators
+
+(1)SQL Arithmetic Operators :- +,-,*,/,%
+(2)SQL Comparison Operators :- =, !=,< > (same as not equal), >, >=, <, <=, !<, !>
+(3)SQL Logical Operators :-ALL, AND,ANY,BETWEEN,IN,NOT,OR,EXISTS,LIKE
+=================================
+"""
