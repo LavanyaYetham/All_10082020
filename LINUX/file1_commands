@@ -1,0 +1,195 @@
+"""
+LINUX BASIC COMMANDS:-
+---------------------
+(1)logname
+(2)date
+(3)cal
+(4)whoami
+(5)who am i
+(6)w
+(7)who
+(8)touch
+(9)cat
+(10)rm
+(11)rm -f
+(12)mkdir
+(13)rmdir
+(14)rm -rf <dir>
+(15)cp <source file> <destination file>
+(16)cp -r <source directory> <destination directory>
+(17)mv <old file> <new file>  [note:In current directory]
+(18)mv <old file> <new directory>  [note:In current directory]
+(19)mv <file name> <path>    [note:move to different directory]
+(20)mv <directory name> <path>  [note:move to different directory]
+(21)ls
+(22)ls -l
+(23)ls -ltr
+(24)ls -ld
+(25)history
+(26)diff
+(27)patch
+(28)echo *
+(29)env
+(30)export PATH=$PATH:<path>
+(31)echo $PATH
+(32)echo $USER
+(33)echo $HOME
+(34)echo $SHELL
+(35)hostname
+(36)hostname -I
+(37)hostname -f
+(38)ifconfig
+(39)route -n
+(40)ping <ip address>
+(41)ping google.com
+(42)ssh <username>@<ip address>
+(43)scp <file name> <user name>@<ip address>:<path>
+(44)scp -r <file name> <user name>@<ip address>:<path>
+(45)netstat -ntalp |grep <port/service name>
+(46)nc -vz <ip address> <port>
+(47)telnet <ip address>:<port>
+(48)finger <user name>
+(49)man <comand>
+(50)info <command>
+(51)<command> --help
+(52)whatis <command>
+(53)which <command>
+(54)cd
+(55)cd ..
+(56)cd ~
+(57)cd ~<username>
+(58)cd /
+(59)cd -
+(60)find <path> -name <name>
+    find <path> -name <name> -type -F
+    find <path> -iname <name> -type -d
+    find <path> -size <10G/+10G/-10G>
+    find <path> -perm <like 777/666/755>
+    find <path> -atime/amin <10/+10/-10>
+    find <path> -mtime/mmin <10/+10/-10>
+    find <path> -ctime/cmin <10/+10/-10>
+    find <path> -user <user name>
+    find <path> -group <group name>
+(61)
+vim <file name>
+(i)command mode
+(ii)insert mode
+(iii)execution mode
+(i)command mode:
+    i=>insert before cursor position 
+    I=>insert beging of line
+    a=>insert after cursor position 
+    A=>insert end of line
+    o=>empty line below te cursor position
+    O=>emply line above the curson position
+    <n>yy=>copy 'n' lines
+    <n>p=>paste below the cursor
+    <n>P=>paste above the cursor
+    <n>dd=>delete lines
+    <n>dw=>delete words
+    <n>x=>delete characters
+    <n>cw=>change words
+    r=>replace single character
+    R=>replace from cursor position
+    u=>undo last change
+    U=>undo all changes till the last save
+    ^=>go to begining of line
+    $=>go to end of line
+    d^=>delete from cursor position to begining of line
+    d$=>delete from cursor positon to end if line
+    gg=>go to begining of file
+    G=>go to end of file
+ (62)
+screen -ls
+
+screen -S "<screen name>"
+screen -r <screen id>
+
+ctl+a+d
+
+screen -ls
+
+screen -r <screen name>
+ 
+ctl+shift+d --->teminating the screen
+
+=================================================================================================================================================
+TEXT PROCESSING TOOLS:-
+---------------------
+(1)less
+(2)more
+(3)head
+(4)tail
+(5)tail -f
+(6)wc <-[l,c,w]>
+(7)grep
+(8)egre
+(9)fgrep
+(10)cut
+(11)awk
+(12)sort
+(13)uniq
+(14)gzip/gunzip/zcat
+(15)bzip2/bunxip2/bzcat
+(16)tar [cvzf/tvzf/xvzf] =><file name>.tar.gz
+    tar [cvjf/tvjf/xvjf] =><file.name>.tar.bz2
+(17)sed -i
+(18)tee
+(19)tr
+(20)STDIN(<)
+(21)STDOUT(>)
+(22)STDERR(2>)
+(23)STDERR into STDOUT (2>&1)
+(24)Redirecting both ERR and OUT (&>)
+
+
+
+    
+=================================================================================================================================================
+PROCESS MANAGEMENT COMMANDS:-
+---------------------------
+(1)ps
+(2)ps -aux
+(3)top
+(4)uptime
+(5)vmstat
+(6)iostat
+(7)fre -m
+(8)nproc
+(9)lsof -p <pid>
+(10)sar
+(11)sar -t
+(12)sar -d
+(13)kill <pid>
+(14)kill all <process name>
+(15)jobs
+(16)fg %<job number>
+(17)bg %<job number>
+(18)&
+=================================================================================================================================================
+FILE MANAGEMENT COMMANDS:-
+-------------------------
+(1)lsblk
+(2)fdisk -l
+(3)df -h
+(4)du sh <dir/file>
+(5)du -sch
+(6)mount
+
+=================================================================================================================================================
+USER ADMINISTRATION:-
+--------------------
+(1)useradd
+(2)passwd
+(3)usermod 
+(4)userdel -r
+(5)groupadd
+(6)groupmod
+(7)groupdel
+(8)chown -R 
+(9)chgrp -R
+(10)chmod -R
+(11)chage -l <user name>
+(12)id <user name>
+(13)umask
+"""

@@ -1,0 +1,157 @@
+"""
+Shell:-
+Shell is an interface between the user and the kernel. Even though there can be only one kernel; a system can have many shell running simultaneously. So, whenever a user enters a command through the keyboard, the shell communicates with the kernel to execute it and then display the output to the user.
+
+Computer:-The word “computer” came from the word compute which means calculate. A computer full form stands for Common Operating Machine Purposely Used for Technological and Educational Research.
+
+Hareware:-Computer hardware includes the physical parts of a computer, such as the case,[1] central processing unit (CPU), monitor, keyboard, computer data storage, graphics card, sound card, speakers and motherboard.[2]
+By contrast, software is the set of instructions that can be stored and run by hardware. Hardware is so-termed because it is "hard" or rigid with respect to changes, whereas software is "soft" because it is easy to change.
+
+Hardware is typically directed by the software to execute any command or instruction. A combination of hardware and software forms a usable computing system, although other systems exist with only hardware.
+
+Four Main Componet of computer:-RAM,HDD,Processor,Network
+
+
+Measurement Of Data:-The smallest unit of measurement used for measuring data is a bit. A single bit can have a value of either 0 or 1. It may contain a binary value (such as On/Off or True/False), but nothing more. Therefore, a byte, or eight bits, is used as the fundamental unit of measurement for data. A byte can store 28 or 256 different values, which is sufficient to represent standard ASCII characters, such as letters, numbers and symbols.
+
+Network: - A network is any collection of independent computers that communicate with one another over a shared network medium. A computer network is a collection of two or more connected computers. If we want to make the network between computers, we need below network requirements. 
+PC, OS, NIC, IP Address, protocol, cables, connectors and Network devices. 
+
+PC(Pesonal computer):-The definition of a personal computer is a small computer with a microprocessor, designed for use by an individual.
+
+OS (Operating System):- An Operating System (OS) is an interface between a computer user and computer hardware
+There are types of Operating Systems.
+1) Client Operating System
+2) Server Operating System
+
+Server Operating system provides some services to clients like ADS, DNS and DHCP etc., 
+EX :- Windows NT, Windows 2000, Windows 2003, Windows 2008 / Windows 2008 R2, Windows 2012 / Windows 2012 R2, Unix (Oracle Solaris, IBM AIX, HP UX, FreeBSD, NetBSD, OpenBSD, SCO Unix etc), GNU/Linux (RedHat Enterprise Linux, Debian Linux, SUSE Enterprise, Ubuntu Server, CentOS Server, Mandriva, Fedora etc.
+
+Client Operating System doesn’t provide the services, But it access the services from Server OS.
+Ex : - Windows 95/98/ME Vista, Windows NT Workstation / Windows 2000 Professional, Windows XP, Windows 7, Windows 8 / Windows 8.1, RedHat Enterprise Linux Desktop, SuSE Desktop, Ubuntu Desktop, Linux Mint
+
+Some popular Operating Systems include Linux Operating System, Windows Operating System, VMS, OS/400, AIX, z/OS, etc.
+
+NIC: - NIC Stands for Network Interface Card.  Some NIC cards work with wired connections while others are wireless. Most NICs support either wired Ethernet or Wi-Fi wireless standards. Ethernet NICs plug into the system bus of the PC and include jacks for network cables, while Wi-Fi NICs contain built-in transmitters / receivers (transceivers).
+It has a MAC (Media Access Control) address. It is a 48 bit address and divided into 12 hexa decimal like 6+6. First 6 is vendor code and second 6 is serial number of NIC. It is unique address.
+
+IP address: - IP stands for Internet Protocol address. It is 32 bit address and it is divided into 4 octets. Each octet is 8 bits designed by IANA (Internet Assigned Numbers Authority). 
+Versions of IP address:-
+IPV4 is 32 bit address
+IPV6 is 128 bit address.
+Now we are using IPV4 only.
+
+Class A Network:-1-127
+Net Mask Of Class A Network:-255.255.255.0
+CLass B Network:-128-191
+Net Mask Of Class A Network:-255.255.0.0
+Class c Network:-192-223
+Net Mask Of Class A Network:-255.0.0.0
+Class D Network:-224-240
+Class E Network:-241-255
+IP address reserved by IANA (Internet Assigned Numbers Authority) for clients called as private ip address.\
+
+Netmask:-A netmask is a 32-bit binary mask used to divide an IP address into subnets and specify the network's available hosts.
+GateWay:-A gateway is a networking device that connects two networks using different protocols together. it also acts as a “gate” between two networks. 
+vim /etc/sysconfig/network-scripts/ifcfg-enp0s3 (For version 7)
+vim /etc/sysconfig/network-scripts/ifcfg-eth0 (For version 6)
+Protocols:- Network Protocol is a set of rules that governs(control) the communications between computers on a network. Each protocol has its own method of how data is formatted when sent and what to do with it once received, how that data is compressed or how to check for errors in data.
+
+Network Devices:-The Network devices are playing an important role in Network Communication, each device has different role.
+Network Devices are HUB, Switch, Router and Firewall.
+
+
+The OSI Model :-
+Upper layers - 
+7.Application
+6.Presentation
+5. Session 
+Lower layers - 
+4.Transport
+3.Network
+2.Datalink
+1.Physical 
+
+->The Application, Presentation and Session layer take user input and converts it into data, 
+->The Transport layer adds a segment header converting the data into segments, 
+->The Network layer adds a network header and converts the segments into packets / data grams, 
+->The Data Link layer adds a frame header converting the packets/data grams into frames, 
+
+History of UNIX:-
+Before development of UNIX operating system AT & T Bell Labs, Software Team lead by Kenn Thomson, Dennis Ritchie and Rudd Canday worked on MULTICS project.­­­­­­­ MULTICS stands for Multi Information Computing System. The aim of this project is to share the same data by ‘n’ number of users at the same time. Initially, MUTICS was developed for only two users. Based on the same concept in 1969, UNICS Operating System was developed for hundreds of users. UNICS stands for Uniplexed Information Computing System. Initially UNICS was written Assembly language. In 1973, they rewritten in ‘C’ language named as UNIX.
+
+History of Linux :
+The history of Linux began in 1991 with the commencement of a personal project by Finnish student Linus Torvalds to create a new free operating system kernel. Since then, the resulting Linux kernel has been marked by constant growth throughout its history. Since the initial release of its source code in 1991, it has grown from a small number of C files under a license prohibiting commercial distribution to the 4.2.3 version in 2015 with more than 18 million lines of source code under the GNU General Public License .
+
+Features of UNIX:-
+1. Multi User capability
+2. Multi Tasking Capability    
+3. Programming Facility
+4. Portability
+5. Communication (Electronic Mail)
+6. Security
+7. Open System
+8. System Calls
+9. Help Facility.
+
+The UNIX File System:-
+A file is the basic structure used to store information on the UNIX system. Technically, a file is a sequence of bytes that is stored somewhere on a storage device, such as a disk. Within UNIX there are three different types of files
+1. Regular files (file <file name>)
+2. Directory files (folder or directory)
+3. Special files
+   ->Linked (l)
+   ->block (b)
+   ->device (b)
+   ->piped file (p)
+   ->char (c)
+
+The UNIX file system is called a hierarchical file system.
+For every file we have three types of permisions, they are READ(r(read)),WRITE(w(edit&change)),EXICUTE(x(execute as a script))
+Accessing the Linux Machine:
+We can access the Linux machine by using two users. 
+1. root user :-
+We can call root as administrator user or super user. When we access the machine with root user,  we can get # login prompt. root is having full permissions and access to the machine and he can have full control over the system.
+root user id is 0.
+UMASK of Root:- 022
+For Root user permission of a file is :- 644
+For Root user permissions of a directory is :-744
+2. Normal user : When we login as normal user, we can get the $ prompt and normal user is having limited permission to access the system.
+Normal user’s user ids will start from 500.
+UMASK of Normal User:- 002
+For Normal user permission of a file is :- 664
+For Normal  user permissions of a directory is :- 774
+
+Switching Between Users: 
+We can switch users by using su command.
+$su <user name> : switching user as <user name> without changing his environment .
+$su - <user name> : switching user as <user name> with new login environment.
+The hyphen (-) has two effects:
+  1) switches from the current directory to the home directory of the new user (e.g., to /root in the case of the root user) by logging in as that user
+  2) changes the environmental variables to those of the new user as dictated by their ~/.bashrc. That is, if the first argument to su is a hyphen, the current directory and environment will be changed to what would be expected if the new user had actually logged on to a new session (rather than just taking over an existing session).
+
+$id : Print real and effective user and group IDs
+syntax: id <user name> (if we type just id ,it will give the id information of currect working user)
+      Ex: $ id 
+uid=1001(yugandhar) 	gid=1001(yugandhar)	 
+groups=1001(yugandhar),4(adm),27(sudo),108(lpadmin),124(sambashare)
+
+-g : Print only the effective group id.
+-G : Print all Group ID’s.
+-n : Prints name instead of number
+EX:-id -ng <user name>
+-r : Prints real ID instead of numbers.
+-u : Prints only the effective user ID.
+–help : Display help messages and exit.
+–version : Display the version information and exit.
+
+          RDC
+windows ----------->windows
+          Putty
+windows ----------->Linux
+           RDP
+Linux   ----------->Windows
+          Terminal
+Linux   ------------>Linux
+
+=================================================================================================================================================
+"""
