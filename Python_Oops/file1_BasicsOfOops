@@ -1,0 +1,65 @@
+"""
+PYTHON OOPS:-
+What is oops?
+All programs are a kind of a object oriented programming languages Like c,c++,java etc
+When we come to the Python,python can be used as a object oriented programming language as well as functional programming alanguage and as well as Procedurallanguage also.
+In Python each and everything we can take it as an Object.When you import any modules or any libraries ,each and everything you are assign to the any variable and you are calling them.so ,you are  proceesing all  your data in the maner of Objects.You calling evething is a objects in Python.
+One Object may have a dfference attribues and different methods.Here in cases attrinbutes are a kind of what are things we are passing to that functions.Hereall functions we are collecting as a Methods.In such cases we assigning all the classes.So,To achive this kind of stuff we are maintainig as a classes,insidethe classes methods in oops.To achive that oops concept in our program we can catogarize like a classes inside the classes methods (Methods are nothing but  an a functions) and while we are creating the classes we can initiates the attributes (Here attributes are nothing nut an a variables).
+we can create our projects structure or programming structure very easy by defining that object.
+
+-->OOP concepts are very important in Python as well as in many other programming languages.
+-->Python is an object-oriented programming language. You can write programs in Python either in a procedural way or in an object-oriented way.
+-->Procedural programming is the normal way of programming that we people do, by mostly using functions.
+
+->Python is an object-oriented programming language.In Python, we can easily create and use classes and objects.
+
+->Major principles of object-oriented programming system are given below.
+
+Object
+Class
+Method
+Inheritance
+Polymorphism
+Data Abstraction
+Encapsulation
+
+Object:-
+-------
+The object is an entity that has state and behavior. It may be any real-world object like the mouse, keyboard, chair, table, pen, etc.Everything in Python is an object, and almost everything has attributes and methods. All functions have a built-in attribute __doc__, which returns the doc string defined in the function source code.
+
+Class:-
+------
+The class can be defined as a collection of objects. 
+Classes are created by keyword class.
+Attributes are the variables that belong to class.
+Attributes are always public and can be accessed using dot (.) operator. Eg.: Myclass.Myattribute
+Class is a logical entity that has some specific attributes and methods. For example: if you have an employee class then it should contain an attribute and method, i.e. an email id, name, age, salary, etc.
+
+Method:-
+-------
+Function that belongs to a class is called an Method.
+‘def’ keyword is used to create a new method.
+Inheritance can also be indirect. One class can inherit from another, and that class can inherit from a third class.
+
+
+Inheritance:-
+-----------
+Deriving a new class from an old one is called inheritance. The old class is called superclass and the new one is called subclass.
+
+Polymorphism:-
+------------
+Polymorphism contains two words "poly" and "morphs". Poly means many and Morphs means form, shape. By polymorphism, we understand that one task can be performed in different ways.
+Polymorphism is the property by which objects belonging to different classes are able to respond to the same message but in different ways.
+
+Encapsulation:-
+-------------
+Encapsulation means binding the code and the data together. A Python class in an example of encapsulation.
+
+Data Abstraction:-
+-----------------
+Data abstraction and encapsulation both are often used as synonyms. Both are nearly synonym because data abstraction is achieved through encapsulation.
+
+Abstraction is used to hide internal details and show only functionalities. Abstracting something means to give names to things so that the name captures the core of what a function or a whole program does.
+
+"""
+

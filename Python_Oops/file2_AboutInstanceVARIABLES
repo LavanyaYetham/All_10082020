@@ -1,0 +1,109 @@
+"""
+About INSTANCE VARIABLES:-
+-------------------------
+->If the value of a varible is varied from object to object,such type of variablesare called instance variables or object level variables.
+Ex:- Name and RollNo of the student
+
+->For every object a seperate copy of instance variables will be created.
+->Most of the times instance variables will be declared inside constructor by using self variable.
+
+Different way to Create Intance Variables:-
+-------------------------------------------
+(i)Inside construnctor by using self.
+(ii)Inside Instance method by using self.
+   ->We can also declare instance variables inside instance method by using self variable.
+   ->If we declare any instance variable inside instance method,that variable willbe added to the object once we call that method.
+   ->If we are not calling that instance method then those variables won't be added to the object.
+(iii)Outside of the class by using object reference Variable.
+
+Ex:-
+class Test:
+    def __init__(self):
+        self.a=10
+        self.b=20
+   def m1(self):
+       self.c=30
+t=Text() #a,b willbe added to the object
+t.m1()  #c willbe added to the object
+t.d=40  #d willbe added to the object
+
+print (t.__dict__)
+
+=>The number  of instance variables will be varied fromobject to object in Python.
+But in Java,the number of instance variables are always sane for every object.
+
+class Test:
+    def __init__(self):
+        self.a=10
+        self.b=20
+   def m1(self):
+       self.c=30
+t1=Text() #a,b willbe added to the object
+t1.m1()  #c willbe added to the object
+t1.d=40  #d willbe added to the object
+t2=Text
+print (t1.__dict__)
+print (t2.__dict__)
+
+Different ways To Access Instance Variables:-
+---------------------------
+->Within the class,we can access instance variables by using self(of cource inside costructor and instance method)
+->But ouside of the class,we can access by using object reference.
+EX:-
+class Test:
+    def __init__(self):
+        self.a=10
+        self.b=20
+    def display(self):
+        print (self.a) #10
+        print (self.b) #20
+t=Text()
+t.display()
+print (t.a) #10
+print (t.b) #20
+
+Different ways To Delete instance vatibles:-
+---------------------------
+Based on our programming requirment,we can deleteinstance varibles from the object.
+(i)Within the class
+Syntax:- del self.variblename
+ex:-del self.c
+
+(ii)From outside of class
+Syntax:- del ObjectReference.variable
+ex:-del t.a
+
+[Note:-We can delete multiple instance variable also like del t.a,t.b]
+
+-->The instance varible which are deleted from object ,won't be deleted from other objects,because for every object separete copy there.
+
+Ex:-
+class Test:
+    def __init__(self):
+        self.a=10
+        self.b=20
+        self.c=30
+        self.d=40
+    def ma(self):
+        del self.c
+t1=Text()
+t1.m1()
+print (t1.__dict__)
+t2=Text()
+del t2.b,t2.d
+print (t2.__dict__)
+
+=>If we change the values of instance variable of one object,then those changes won't be reflected to other objects,because for every object  a separate copy of instance variables are available.
+Ex:-
+class Test:
+    def __init__(self):
+        self.a=10
+        self.b=20
+t1=Text()
+t1.a=888
+t1.b=999
+t2=Text()
+print (t1.1,t1.b)
+print (t2.a,t2.b)
+
+"""

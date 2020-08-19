@@ -1,0 +1,82 @@
+"""
+About STATIC VARIABLES:-
+-------------------------
+->If the value of a variable is not varied from object to object,then it is not recommended to declare those variables as instance variable.We have to declare at class level as static variables.
+->In thecase of instance variables,for every object a separate copy will be created.But in the caseof static Variables at class level only one copy will be created and shared every object of that class.
+->Most of  the times,statc variables  should be declared within the class directly.
+
+Various Places to declare Static Variables:-
+------------------------------------------
+1)In general we can declare static varibles within the class directly but outside os by method or construnctor
+2)Inside constructor by uding class name
+3)Inside instance method by using class name.
+4)Inside class method by using  either class name or cls variable
+5)Inside static method by using class name.
+6)From outside of the class by using classname.
+Ex:-
+class Text:
+    a=10
+    def __init__(self):
+        Text.b=20
+    def m1(self):
+        Text.c=30
+    @classmethod
+    def m2(cls):
+        cls.d=40
+        Text.e=50
+    @staticmethod
+    def m3():
+        Text.f=60
+Text.g=70
+
+Differenct Way to access static Variable:-
+-----------------------------------------
+1)Inside constructor either by using self or by class name.
+2)Inside instance method either by self or by class name.
+3)Inside class method either by using cls or by class name. 
+4)Inside static method by using classname.
+5)Outside of the class,by using classname or by using object reference.
+
+Ex:-
+class Text:
+    a=10
+    def __int__(self):
+        print (self.a)
+        print (Text.a)
+    def m1(self):
+        print (self.a)
+        print (Text.a)
+    @classmethod
+    def m2(cls):
+        print (cls.a)
+        print (Text.a)
+    @static method
+    def m3():
+        print (Text.a)
+t=Text()
+print (t.a)
+print (Text.a)
+
+Where We can modify the value of static Variable:-
+-------------------------------------------------
+We can modify the value of static variable anywhere(Either within the class or outside of the class)by using class name.
+But inside classmethod,we can also use cls variable.
+[Note:-We cannot modify static variable value by using self or object reference]
+
+Ex:-
+class Text:
+    a=10
+    def __init__(self):
+        Text.a=20
+    def m1(self):
+        Text.a=30
+    @classmethod
+    def m2(cls):
+        cls.a=40
+        Text.a=50
+    @staticmethod
+    def m3():
+        Text.a=60
+Text.a=70
+
+"""
