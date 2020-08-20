@@ -36,12 +36,12 @@ LINUX BASIC COMMANDS:-
 Ex:-# pwd
 /root
 10)date: The Linux date command print or set the system date and time
-Date command is used to display the system date and time. Date command is also used to set the date and time of the system. By default the date command displays the date in the time zone on which the unix/linux operating system is configured.You must be the super-user (root) to change the date and time.
+Date command is used to display the system date and time. Date command is also used to set date and time of the system. By default the date command displays the date in the time zone on which unix/linux operating system is configured.You must be the super-user (root) to change the date and time.
 EX1:-# date
 Mon Mar 23 16:18:31 IST 2020
 EX2:-# date -u
 Mon Mar 23 10:52:46 UTC 2020
-Above command displays the time in GMT(Greenwich Mean Time)/UTC(Coordinated Universal Time )time zone.
+Above command display the time in GMT(Greenwich Mean Time)/UTC(Coordinated Universal Time )time zone.
 EX3:-# date --date="2/02/2010"
 Tue Feb  2 00:00:00 IST 2010
 Above command Displays the given date string in the format of date. But this will not affect the system’s actual date and time value.Rather it uses the date and time given in the form of string.
@@ -72,6 +72,8 @@ Mon Mar 23 16:34:34 IST 2020
 2020-03-23
 # date "+%Y/%m/%d"
 2020/03/2
+
+
 
 # date "+%A"
 Monday
@@ -128,19 +130,19 @@ Linux lavs.home.com 3.10.0-957.el7.x86_64 #1 SMP Thu Nov 8 23:39:32 UTC 2018 x86
 # uname -v
 #1 SMP Thu Nov 8 23:39:32 UTC 2018
 [root@lavs ~]# 
-uname -s =>to see type of kernel
+uname -s =>to see type of kernal
 # uname -s
 Linux
-uname -r =>to see kernel release
+unmae -r =>to see kernal release
 # uname -r
 3.10.0-957.el7.x86_64
-uname -v => to see kernel version
+uname -v => to see kernalversion
 # uname -v
 #1 SMP Thu Nov 8 23:39:32 UTC 2018
 
 13)$ whoami
 lavs
-It gives who is working on the current environment
+It gives who is working on the current environmnet
 14)$ who am  i
 root     pts/0        2020-03-23 16:58 (192.168.2.3)
 It gives who is logged in the machine with login time and ip address
@@ -167,12 +169,12 @@ Directory: /home/lavs               	Shell: /bin/bash
 Last login Mon Mar 23 17:00 (IST) on pts/0
 No mail.
 No Plan.
-Finger command gives dump of information about a use,including the time of user's last login,the user's home directory and user account's full name
+Finger command gives dump og information about a use,including the time of user's last login,the user's home directory and user account's full name
 
 Working with Files and Directories:-
 -----------------------------------
 18)touch command:-It is used to create a file with zero byte size
-syntax:-touch <filename>
+sytax:-touch <file name>
 # touch file1
 # ls -l file1 
 -rw-r--r--. 1 root root 0 Mar 23 18:37 file1
@@ -191,14 +193,13 @@ Access: 2020-03-23 18:48:26.829000000 +0530
 Modify: 2020-03-23 18:48:26.829000000 +0530
 Change: 2020-03-23 18:48:26.831000000 +0530
  Birth: -
-The above display the display file or file system status
 
 19)cat command:The cat command displays the contents of a file to the terminal windows 
 cat filename -->to read the contents of a existing file
 cat > filename -->to overwrite data(It will overwrite data if file is existed if file is not not existed it will creat new file) 
 cat >> filename -->to append the data
 cat filename1 filename2  -->To display contents of multiple files in one go. 
-To copy the contents of one file to another file. :-cat [filename-whose-contents-is-to-be-copied] >[destination-filename]
+To copy the contents of one file to another file. :-cat [filename-whose-contents-is-to-be-copied] > [destination-filename]
 EX1:-# cat file 
 Hai
 this 
@@ -225,7 +226,7 @@ to
 Linux
 web site
 
-20)rm command:-Linux rm  command is used to remove/delete the file from the directory.
+20)rm command:-Linux rm command is used to remove/delete the file from the directory.
 syntax:-rm <file name>
 rm -i <file name> (prompt before every removal)
 rm -f <file name> (forcely rm without asking)
@@ -239,14 +240,14 @@ Syntax: #rmdir <Directory name>
 rmdir <Directory name1> <Directory name12> <Directory name3>
 23)rm -rf : To remove the directory which is having contents.
 syntax:-rm -rf <directory name>
-rm -rf * ==>to remove all the file and directories subdirectories in current working directory 
+rm -rf * ==>to remove all the file and direcctories subdirectories in current working directory 
 24)cd: The Linux cd command can be used to change the working directory.
 syntax:- cd <directory name>
 cd => Changing Directories
 cd ~ => It will get you into the home directory
 cd - => Move you to the previous working directory
 cd .. => move you to the 1 step back
-cd /path/to/dir => Move you to the specified directory path.
+cd /path/to/dir => Move you to specified directory path.
 cd <directory name> => move you to desired directory
 25)mv command:- The Linux mv command is used to move a file from one location to another location and renaming the file as well. Rename a File and Directory
 26)cp: copy files and directories
@@ -256,22 +257,22 @@ To prevent cp from overwriting existing files, use the -i (for interactive optio
 #cp –r   
 To copy complete directories, use cp -r (the -r option forces recursive copying of all files in all subdirectories).
 # cp file1 file2 : This will copy the contents of file1 into a file2. If file2 is
-already exists.
+already existed it overwrites.
 # cp - i file1 file2 : If file2 is already existed then it asks the
 27)more command : To view a text file one page at a time, press spacebar to go to the next page
 syntax:-more <file name>
-#more -num filename : show the document page few lines as specified by (-num)
+#more -num filename : show the document page few lines as specified bu (-num)
 example : more -10 filename will show 10 lines for every page
 28)less command:-less :It is much the same as more command except:
 You can navigate the page up/down using the less command and not possible in more command. You can search a string in less command. (use /keyword to search). “more” was fairly limited, and additional development on “more” had stopped. d) it uses same functions as vi editor the usage : less filename
 syntax:-less <file name>
-29)alias command:Invoking alias with no arguments will display all currently aliased commands.
+29)alias comand:Invoking alias with no arguments will display all currently aliased commands.
 syntax:-alias (it display all alias command)
-alias <command> (it display the alias of particular command)            
+alias <commmad> (it display the alias of perticuler command)            
 to create alias of command:-
 #alias <alias name>="command name"
 30)tty command:-return user's terminal name
-The Linux "tty" command displays the name of the connected terminal.
+The Linux "tty" command display the name of the connected terminal.
 EX:-# tty
 /dev/pts/0
 Note: The above terminal displayed is a pseudo-terminal
@@ -296,7 +297,7 @@ to print the PID number of current bash
 # echo $?
 to see the last commad is successfully executed or not[0 means success.If it gives number b/w 0-255 that means error]
 # echo $!
-to give process id of process that recently went into background
+to give process id of prodess that recently went into background
 33)clear: The Linux "clear" command clears the terminal.
 34)logout/exit: To logout from the current user.
 Ex: $logout or $exit
@@ -313,7 +314,7 @@ Bring down the system immediately.
 Bring down the system immediately, and automatically reboot it.
 #shutdown -P now
 Bring down the system immediately, and automatically power off the system.
-36)wc command:-wc (word count) command in Unix/Linux operating systems is used to find out the number of newline count, word count, byte and characters count in a file specified by the file arguments. The syntax of wc command as shown below.
+36)wc command:-wc (word count) command in Unix/Linux operating systems is used to find out number of newline count, word count, byte and characters count in a files specified by the file arguments. The syntax of wc command as shown below.
 Syntax:# wc [options] filenames
 wc -l : Prints the number of lines in a file.
 wc -w : prints the number of words in a file.
@@ -322,16 +323,16 @@ wc -m : prints the count of characters from a file.
 wc -lw file1 =>It displays only line &amp; word count
 wc -wc file1=>It displays only word character count
 wc -lc file1=> It displays only line &amp; character count
-37)Piping(|) :-By using a pipe symbol we can execute two or more commands such that output of one command serves as input to the next. I
+37)Piping(|) :-By using pipe symbol we can exetute two or more commands such that output of one command serves as input to the next. I
 38)I/O Redirection:
 STDIN (0) Standard input (data fed into the program)
-"<" symbol is used for input redirection
+"<" symblo is used for input redirection
 STDOUT (1) - Standard output (data printed by the program, defaults to the terminal)
-"> symbol is used for  output redirection
+"> symblo is used for  output redirection
 STDERR (2) - Standard error (for error messages, also defaults to the terminal)
-"2>" symbol is used for error redirection
+"2>" symblo is used for error redirection
 "&>" symbol is used for standard output and error redirection
-"2>&1" symbol is used to convert STDERR to STDOUT
+"2>$1" symbol is used to convert STDERR to STDOUT
 39)tee command:-Tee redirects standard input to both standard output and one or more files.
 40)ls command:-list all the files and directories in current working directory
 ls -a:-list all files including hidden file starting with '.'
@@ -356,11 +357,11 @@ ls -t : It displays files and directories based on date &amp; time of creation
 i.e.
 Last file to first file
 41)ls -l <filename>
-to see the permissions of a file
+to see the permisions of a file
 42)ls -ld <directory name>
-to see the permissions of a directory
+to see the permisions of a file
 43)grep command:-grep stand for "Global regular expression and print"
-grep command is used to search for a specific string in the specified file.
+grep command is used search for a specific string in the specified file.
 Syntax: grep "<string>" filename
 # grep -r "<string>" <directory name>
 Recursively search the directory , and all subdirectories, for any lines of any files which contain the given string 
@@ -369,14 +370,14 @@ Search the file for lines containing the word . Only lines containing the distin
 #grep -cw "string" <file name>
 Same as previous command, but displays a count of how many lines were matched, rather than the matching lines themselves.
 #grep -cvw "string" <file name>
-reverse of previous command: displays a count of the lines in file which do not contain the "string".
+nverse of previous command: displays a count of the lines in file which do not contain the "string".
 #grep -l "<sting>" <directory name>
 Display the filenames (but not the matching lines themselves) of any files in <directory name>(but not its subdirectories) whose contents include the string "<string>".
 #grep -c "string" <file name> (Print the count of lines which are consists given string)
 #grep -v "string" <file name> ( omitting the given string and print rest of the lines)
 #grep -i "string" <file name> ( Ignoring Case sensitive )
 #grep -n "string" <file name>  (Print the line numbers along with output)
-44)Egrep :-=>if you want to search for multiple strings, you can use egrep.
+44)Egrep :-=>if you want search for multiple strings, you can use egrep.
 Ex:-  # egrep  'india|welcome' abc
 Fgrep :-his can be used for searching strings which stored in file
 EX:-# grep -f search.txt abc  => This can be used for searching strings which are
@@ -385,7 +386,7 @@ Ex:-fgrep'forum'file1.txt
 45)cut command:-you must specify a list of bytes, characters, or fields
 syntax : cut [option] [source file]
 46)sort command:-To sort out the data in alphabetical order
-Sort command in the unix or linux system is used to order the elements or text. Sort command has the capability of sorting numerical values and strings. The sort command can order the lines in a text file.
+Sort command in unix or linux system is used to order the elements or text. Sort command has the capability of sorting numerical values and strings. The sort command can order the lines in a text file.
 syntax : sort [options] filename
 
 The options are:
@@ -399,17 +400,17 @@ The options are:
 -k : Sorts file based on the data in the specified field positions.
 -u : Suppresses duplicate lines
 -t : input field separator
-# sort –O  resultfile file1 file2
+# sort –O resultfile file1 file2
 This command sorts the file1 and file2 and store the result in resultfile.
-47)uniq command:-It displays unique lines
-Uniq command in unix or linux systems is used to suppress the duplicate lines from a file.The default behavior of the uniq command is to suppress the duplicate line. Note that, you have to pass sorted input to the uniq, as it compares only successive lines.
+47)uniq command:-It displays uniq lines
+Uniq command in unix or linux system is used to suppress the duplicate lines from a file.The default behavior of the uniq command is to suppress the duplicate line. Note that, you have to pass sorted input to the uniq, as it compares only successive lines.
 # uniq -c <file name>
 The -c option is used to find how many times each line occurs in the file. It prefixes each line with the count.
 # uniq -d <file name>
 You can print only the lines that occur more than once in a file using the -d option.
 # uniq -D <file name>
 #sort <file name>|sort
-48)Translate command :-tr stands for translate or transliterate. The tr utility in Unix or Linux systems is used to translate, delete or squeeze characters.
+48)Translate command :-tr stands for translate or transliterate. The tr utility in Unix or Linux system is used to translate, delete or squeeze characters.
 syntax:-# tr [options] set1 [set2]
 The options of tr command are:
 -c : complements the set of characters in string.
@@ -454,13 +455,13 @@ syntax:-gzip <file name>
 # gzip -l <zipped file like gzip.txt.gz>
 To list the compressed file information, use “gzip –l” option.
 # gzip -d <zipped file like gzip.txt.gz>
-A compressed file can also decompress by using gunzip command as shown below.
+A compressed file can also decompressed by using gunzip command as shown below.
 55)bzip2 command:-The Linux bzip2 command has better compression ratio compared with Linux gzip command.
 syntax:-bzip2 <file name>
-56)zcat:-to read zipped files
-syntax:-
+56)zcat:-to read ziped files
+sytax:-
 # zcat <zipped file like gzip.txt.gz>
-# bzcat <zipped file like gzip.txt.gz>
+# bzcat <zipped file like bzip2.txt.gz>
 57)tar (tape archiving) command:-The tar program is used to create, maintain, modify, and extract files that are archived in the tar format.
 #tar cf archive.tar file1 file2
 Create archive archive.tar containing files file1 and file2.
@@ -482,22 +483,23 @@ Options : -name
 	: -age (-atime/ctime/mtime)
 	: ownership ( -user/group)
 
+	
 59)$hostname : It is the command to get the hostname
 syntax:- # hostname
 # hostname <hostname> : To set up the hostname temporarily
 # hostname   =>to see hostname
-# hostname -I =>to see IP addess
+# hostname -I =>to see IP address
 # hostname -f =>to see the fully qualified domain name
 # ifconfig  =>to see IP address in linux
 # ipconfig  =>to see IP address in windows
 60)hostnamectl set-hostname <name>.home.com
 It is used to set the hostname to a system
-# cat /etc/sysconfig/network-scripts/ifcfg-eth0 [In version cent OS 6]
-# cat /etc/sysconfig/network-scripts/ifcfg-enp0s3 [In version cent OS 7]
+# cat /etc/sysconfig/network-scripts/ifcfg-eth0 [In version centOS 6]
+# cat /etc/sysconfig/network-scripts/ifcfg-enp0s3 [In version centOS 7]
 To Set up the IP address temporarily.We can assign the ip, netmask, gateway in one command
 # ifconfig eth0 192.168.0.1 netmask 255.255.255.0 gw 192.168.0.254
 If we don’t have a DNS server in our infrastructure, we can define all hostnames in the Local Resolver files (/etc/hosts). 
-he main purpose of /etc/hosts configuration file is to resolve hostnames that cannot be resolved any other way. It can also be used to resolve hostnames on small networks with no DNS server. Regardless of the type of network the computer is on, this file should contain a line specifying the IP address of the loopback device (127.0.0.1) as localhost.localdomain.
+The main purpose of /etc/hosts configuration file is to resolve hostnames that cannot be resolved any other way. It can also be used to resolve hostnames on small networks with no DNS server. Regardless of the type of network the computer is on, this file should contain a line specifying the IP address of the loopback device (127.0.0.1) as localhost.localdomain.
 # cat /etc/hosts
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
@@ -510,13 +512,13 @@ Ex: #wget http://website.com/files/file.zip
 64)scp:-The scp tool is used to copy files from one computer to another while encrypting the data.
 syntax:-scp source_file_name username@destination_host:destination_folder
 scp -r source_file_name username@destination_host:destination_folder
-Sometimes we need to copy directory and all files / directories inside it. It will be better if we can do it in 1 command. SCP support that scenario using “-r” parameter.
+Sometimes we need to copy a directory and all files / directories inside it. It will be better if we can do it in 1 command. SCP supports that scenario using the “-r” parameter.
 65)RSYNC:-Rsync (Remote Sync) is a most commonly used command for copying and synchronizing files and directories remotely as well as locally in Linux/Unix systems. With the help of rsync command you can copy and synchronize your data remotely and locally across directories, across disks and networks, perform data backups and mirroring between two Linux machines.
 66)Vim command:-programmers text editor
-The vi editor has three modes, command mode, insert mode and execution mode
+The vi editor has three modes, command mode, insert mode and command line mode
 1. Command mode: letters or sequence of letters interactively command vi. Commands are case sensitive. The ESC key can end a command.
 2. Insert mode: Text is inserted. The ESC key ends insert mode and returns you to command mode. One can enter insert mode with the "i" (insert), "a" (insert after), "A" (insert at end of line), "o" (open new line after current line) or "O" (Open line above current line) commands.
-3. Execution mode: One enters this mode by typing ":" which puts the command line entry at the foot of the screen.
+3. Command line mode: One enters this mode by typing ":" which puts the command line entry at the foot of the screen.
 i => to insert mode
 esc => to command mode 
 
@@ -529,11 +531,12 @@ Execution Mode :
 
 :set nu => to set the line numbers
 :set nonu => to remove the line numbers
-:2 => It brings your cursor to the begining of second line
+:2 => It brings your cursor to the beginning of second line
 :!<cmd> => To execute any linux commands on the fly or 
 the page through vim.
-:%s/morning/evening/g => It will search the for the string morning replace it with evening.
-:nohl => no highlite
+:%s/morning/evening/g => It will search the for the string m
+replace it with evening.
+:nohl => no highlight
 
 command Mode : 
 yy => To yank single line 
@@ -546,7 +549,7 @@ u => undo
 2dd => to delete the 2 lines
 i => insert data before cursor position
 a => insert data after cursor position
-I => insert data begining of the line 
+I => insert data beginning of the line 
 A => insert data end of the line 
 
 dw => Delete the word
@@ -555,7 +558,7 @@ x => delete a character
 2x => delete 2 characters
 cw => change the word
 r => Replacing a char
-R->overwrite from the cursor position
+
 Moving cursor options : HJKL
 k => up
 j => down
@@ -563,7 +566,7 @@ h => Left
 l => right 
 
 $ => to move your cursor to the end of the line 
-^ => to move your cursor to the begining of the line
+^ => to move your cursor to the beginning of the line
 H => Move your cursor to the top of the page
 M => Move your cursor to the Middle of the page
 L => move your cursor to the bottom of the page.
@@ -589,7 +592,7 @@ $ => match char at end of the line
 71)tree command:-list contents of directories in a tree-like format
 72)AWK : It can be used to separate the fields.
 Ex:-# awk -F":" '{ print $1}' pass
-$0 =>for entire line
+$0 =>for  entire line
 $1 =>for first column(first field)
 $1 =>for second  column
 -F =>field separator
@@ -610,7 +613,7 @@ NR =>number of records
 #        #######   #   #         #  
 #        #     #    # #    #     #  
 #######  #     #     #      #####   
-76)cmp command:-
+76)cmd command:-
 # cmp file1 file2 : It compares file1 and file2. If both file contents
 are same number output if files are different then it displays line
 number and character location.
@@ -619,7 +622,7 @@ write command:-to send message to specific user
 mail command:-
 mail -s "subject" <mail address>
 for mail command we need (i)address(ii)subject(iii)body of message(iV)Hash
-78)find . -inum <inode number> -exec rm -i {} \; ----file removing with inod number 
+78)find . -inum <inode number> -exec rm -i {} \; ----file removing with inode number 
 79)To execute multiple commands in single line :-
 # logname;date;whoami
 root
@@ -636,7 +639,7 @@ Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.2.1     0.0.0.0         UG    100    0        0 enp0s3
 192.168.2.0     0.0.0.0         255.255.255.0   U     100    0        0 enp0s3
-Gateway means from where packets are going out  and through wish way packets are commig into your system(like router)
+Gateway means from where packets are going out  and through which way packets are coming into your system(like router)
 86)NIC card is having one address that is MAC address (48bits)
 87)echo * =>to list all files in the current working directory
 88)echo $PATH =>to fingout all your binary files executions paths
@@ -651,15 +654,24 @@ syntax:-diff <file name1> <file name2>
 EX:-# cat file1
 Hello Welcome to india
 # cat file2
-Hello Welcome to flashsoftindia
+Hello Welcome to flashsoft india
 It is incredible in ATP
 # diff file1 file2 |tee file3	
 # patch -b file1 file3  =>Applying patch on file3
 95)expert PATH=$PATH:<add path>
 If you want to add it permanently add in /etc/bashrc
 When you want to change for normal user..add in .bashrc file of that user home directory
+(96)
+screen -ls
+screen -S "<screen name>"
+screen -r <screen id>
+ctl+a+d
+screen -ls
+screen -r <screen name>
+ctrl+shift+d --->terminating the screen
+
 =================================================================================================================================================
-PROCESS MANGEMENT COMMANDS:-
+PROCESS MANAGEMENT COMMANDS:-
 ----------------------------
 (1)ps command:-to list running processes
 ps -aux
@@ -713,12 +725,12 @@ EX:-$ jobs
 # bg %<job number>     => do you get the foreground running jobs into the background.
 (12)To run the process in the background :- To run any process in the background, you should use the & (ampersand) at the end of the command.
 ================================================================================================================================================
-DISK MANAGEMENT/FILE SYSTEM MANGEMENT COMMANDS:-
+DISK MANAGEMENT/FILE SYSTEM MANAGEMENT COMMANDS:-
 ----------------------------------------------
 (1)lsblk:-List block devices....
 (2)fdisk -l:-To get the list of partitions
 (3)mount:-To see mount a filesystem
-(4)df command:-report free disk space 
+(4)f command:-report free disk space 
 # df -h
 Filesystem               Size  Used Avail Use% Mounted on
 /dev/mapper/centos-root   17G  2.8G   15G  17% /
@@ -736,7 +748,7 @@ syntax:-du <file name>
 du -sh <dir/file>
 du -sch *
 =================================================================================================================================================
-USER ADMINISTATIONS:-
+USER ADMINISTRATION:-
 --------------------
 Super user :- root(complete control of entire system)
 system user:-
@@ -747,10 +759,10 @@ Normal user:-Limited permissions
 (3)userdel <user name>   =>To delete the user
   userdel -r
 (4)passwd <username>    =>To set the password to the user
-(5)groupadd <group name>
-(6)groupmod
-(7)groupdel
-(8)chown   =>to change ownership
+(4)groupadd <group name>
+(5)groupmod
+(6)groupdel
+(7)chown   =>to change ownership
 syntax:chown <owner name> 
 syntax:chown -r <owner name>   [recursively]
 (8)chgrp  =>to change group name
@@ -777,7 +789,7 @@ UMASK of Root:- 022
 For Root user permission of a file is :- 644
 For Root user permissions of a directory is :-744
 2. Normal user : When we login as normal user, we can get the $ prompt and normal user is having limited permission to access the system.
-Normal user’s userids will be start from 500.
+Normal user’s users will start from 500.
 UMASK of Root:- 002
 For Root user permission of a file is :- 664
 For Root user permissions of a directory is :- 774
@@ -786,5 +798,6 @@ systemctl start <service-name>
 systemctl stop <service-name>	
 systemctl restart <service-name>
 systemctl status <service-name>
-=================================================================================================================================================
+=========================================================================================
 """
+
