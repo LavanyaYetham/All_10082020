@@ -5,3 +5,10 @@ if num%2 == 0:
 else:
     print (num,"is not even number")
 
+print ("************************")
+
+def even_fun(n):
+    return n%2 == 0
+nums=[1,2,3,4,5,6]
+evens=list(filter(even_fun,nums))
+print (evens)

@@ -37,6 +37,6 @@ for x in range(1,26):
 
 print ("*************")
 #for loop-print multiplicate table
-n=int(input("Enter the numbers: "))
+n=int(input("Enter the number to  display its table : "))
 for i in range(1,11):
-    print (n,"*,",i,"=",n*i)
+    print (n,"*",i,"=",n*i)
