@@ -332,7 +332,7 @@ STDOUT (1) - Standard output (data printed by the program, defaults to the termi
 STDERR (2) - Standard error (for error messages, also defaults to the terminal)
 "2>" symblo is used for error redirection
 "&>" symbol is used for standard output and error redirection
-"2>$1" symbol is used to convert STDERR to STDOUT
+"2>&1" symbol is used to convert STDERR to STDOUT
 39)tee command:-Tee redirects standard input to both standard output and one or more files.
 40)ls command:-list all the files and directories in current working directory
 ls -a:-list all files including hidden file starting with '.'
